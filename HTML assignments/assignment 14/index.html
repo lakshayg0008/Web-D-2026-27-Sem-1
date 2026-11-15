@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nested and Responsive Tables</title>
+
+    <style>
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Nested and Responsive Tables</h1>
+
+    <h2>Student Details</h2>
+
+    <div class="table-container">
+
+        <table>
+            <tr>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Subjects</th>
+            </tr>
+
+            <tr>
+                <td>101</td>
+                <td>Rahul</td>
+                <td>
+                    <table>
+                        <tr>
+                            <th>Subject</th>
+                            <th>Marks</th>
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>90</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>102</td>
+                <td>Aman</td>
+                <td>JavaScript</td>
+            </tr>
+        </table>
+
+    </div>
+
+</body>
+</html>
